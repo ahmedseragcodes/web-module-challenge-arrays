@@ -136,8 +136,13 @@ Use the removeFlavorByName function below to do the following:
     HINT: You can use .splice() for this
 */
 
-function removeFlavorByName(/*your code here*/){
-    /*your code here*/
+function removeFlavorByName(originalFlavors,flavorName){
+    for (let i=0; i<originalFlavors.length; i++){
+        if (originalFlavors[i]===flavorName){
+            originalFlavors.splice(i,1);
+        }
+      }
+      return originalFlavors;
 }
 
 
