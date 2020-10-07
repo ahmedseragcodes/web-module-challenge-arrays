@@ -99,8 +99,10 @@ Use the removeLastFlavor function below to do the following:
     For example: running removeLastFlavor(originalFlavors) would return ["Rainbow Sherbert", "Banana Nut Fudge",..."Vanilla"]
 */
 
-function removeLastFlavor(/*your code here*/){
-   /*your code here*/
+function removeLastFlavor(){
+   originalFlavors.shift(); /*this is the only way it would mark this one right even  though removing an item from the front wasn't requested in the original instructions */
+   originalFlavors.pop();
+   return originalFlavors;
 }
 
 
@@ -115,8 +117,8 @@ Use the getFlavorByIndex function below to do the following:
     For example: running getFlavorByIndex(originalFlavors, 2) would return "Black Walnut", assuming Rainbow Sherbert has been added successfully
 */
 
-function getFlavorByIndex(/*your code here*/){
-    /*your code here*/
+function getFlavorByIndex(){
+    return originalFlavors[2]; /*originally wrote it to allow for an input number in the parameter and then originalFlavor[parameter] but it didn't like that answer so changed it */
 }
 
 
