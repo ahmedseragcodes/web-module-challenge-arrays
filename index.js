@@ -34,7 +34,6 @@ const originalFlavors = [
     "Vanilla",
     "Vanilla Burnt Almond"
 ]
-
 /*🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 1: Copy the Array! 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
 We have an array called originalFlavors with 31 flavors (see above).  In these tasks, we will be reading and writing data to this array.  
 With all of these changes going on, we don't want to lose track of the actual, original 31 flavors.  So we need to copy the original array!
@@ -64,8 +63,10 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-   /*your code here*/
+function is31Flavors(originalFlavors){
+   if (originalFlavors.length===31){
+       return true;
+   }
 }
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
@@ -81,8 +82,9 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-   /*your code here*/
+function addFlavor(){
+   originalFlavors.unshift("Rainbow Sherbert");
+   return originalFlavors;
 }
 
 
